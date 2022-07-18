@@ -5,8 +5,9 @@ const int val=pow(10,7)+1;
 int arr1[val];
 void pre_compute()
 {
-   for(int i=3;i<=val;i+=2)
+   for(int i=3;i<=val;i+=2){
          arr1[i]=1;
+   }
    int v1=sqrt(val);
    for(int i=3;i<=v1;i+=2)
    {
@@ -28,7 +29,7 @@ void pre_compute()
 
 void solve()
 {
-      int val1,val2;
+     int val1,val2;
      cin>>val1>>val2;
      int val3,val4;
      val3=floor(sqrt(val1-1));
